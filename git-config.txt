@@ -1,0 +1,21 @@
+# Git setup by NameFILIP
+
+# git config --global user.name "John Doe"
+# git config --global user.email johndoe@example.com
+
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+
+git config --global alias.unstage 'reset HEAD --'
+
+git config --global alias.slog 'log -n 10 --pretty=oneline --abbrev-commit'
+git config --global alias.hist 'log -n 25 --pretty=format:"%h - %an, %ar : %s"'
+
+# Mac or Linux
+git config --global core.autocrlf input
+git config --global credential.helper osxkeychain
+
+# Windows
+git config --global core.autocrlf true
