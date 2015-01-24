@@ -30,3 +30,15 @@ defaults write com.apple.finder AppleShowAllFiles YES
 # Change font to Monaco 11 pt, Line spacing 1.1
 # Change Window Size to 160x40
 # Change Background to Opacity 79, Blur 0
+
+# .bash_profile
+cat <<EOF > $HOME/.bash_profile
+# Aliases
+alias ll='ls -lhA'
+alias ps='ps auxf'
+# line and name searches
+line_func() { grep -rnIi "$1" . --color; }
+name_func() { find . -name "*" | grep "$1" --color; }
+alias line=line_func
+alias name=name_func
+EOF
