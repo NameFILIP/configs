@@ -32,7 +32,7 @@ defaults write com.apple.finder AppleShowAllFiles YES
 # Change Background to Opacity 79, Blur 0
 
 # .bash_profile
-cat <<EOF > $HOME/.bash_profile
+cat > $HOME/.bash_profile <<DELIM
 # Aliases
 alias ll='ls -lhA'
 alias ps='ps auxf'
@@ -41,4 +41,4 @@ line_func() { grep -rnIi "$1" . --color; }
 name_func() { find . -name "*" | grep "$1" --color; }
 alias line=line_func
 alias name=name_func
-EOF
+DELIM
