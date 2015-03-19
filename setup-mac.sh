@@ -22,6 +22,11 @@ brew install node
 npm install npm -g
 npm install jasmine -g
 
+npm install -g bower
+npm install -g grunt-cli
+npm install -g yo
+
+
 # Show hidden files
 defaults write com.apple.finder AppleShowAllFiles YES
 
@@ -33,6 +38,8 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 # .bash_profile
 cat > $HOME/.bash_profile <<DELIM
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
 # Aliases
 alias ll='ls -lhA'
 alias ps='ps auxf'
