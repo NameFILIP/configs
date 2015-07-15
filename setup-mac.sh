@@ -43,9 +43,20 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 # Aliases
 alias ll='ls -lhA'
 alias ps='ps auxf'
+
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit'
+alias go='git checkout'
+alias gl='git pull'
+alias gp='git push'
+alias gs='git status'
+alias gd='git diff'
+
 # line and name searches
 line_func() { grep -rnIi "$1" . --color; }
 name_func() { find . -name "*" | grep "$1" --color; }
 alias line=line_func
 alias name=name_func
+alias 'p r'='powify restart'
 DELIM
