@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Install XCode ?
 
 # Homebrew
@@ -45,6 +47,7 @@ alias ll='ls -lhA'
 alias ps='ps auxf'
 
 alias ga='git add'
+alias gaa='git add --all'
 alias gb='git branch'
 alias gc='git commit'
 alias go='git checkout'
