@@ -21,13 +21,6 @@ git config --global credential.helper osxkeychain
 
 # Node
 brew install node
-npm install npm -g
-npm install jasmine -g
-
-npm install -g bower
-npm install -g grunt-cli
-npm install -g yo
-
 
 # Show hidden files
 defaults write com.apple.finder AppleShowAllFiles YES
@@ -59,5 +52,4 @@ line_func() { grep -rnIi "$1" . --color; }
 name_func() { find . -name "*" | grep "$1" --color; }
 alias line=line_func
 alias name=name_func
-alias 'p r'='powify restart'
 DELIM
