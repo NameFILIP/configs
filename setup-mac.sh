@@ -37,6 +37,9 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # Aliases
 alias ll='ls -lhA'
+alias sd='say done'
+
+# Git Aliases
 alias ga='git add'
 alias gaa='git add --all'
 alias gb='git branch'
