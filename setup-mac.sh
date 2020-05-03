@@ -3,16 +3,10 @@
 # Install XCode ?
 
 # Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew doctor
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Git
 brew install git
-
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.ci commit
-git config --global alias.st status
 
 git config --global alias.slog 'log -n 10 --pretty=oneline --abbrev-commit'
 
@@ -33,7 +27,6 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 # .bash_profile
 cat > $HOME/.bash_profile <<DELIM
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # Aliases
 alias ll='ls -lhA'
