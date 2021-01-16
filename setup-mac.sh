@@ -61,4 +61,4 @@ COLOR_GIT=$'\e[38;5;39m'
 setopt PROMPT_SUBST
 PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~%f ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} -> '
 
-# Install VS Code and it's Shell bindings
+# Install VS Code and its Shell bindings
