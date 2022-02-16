@@ -21,7 +21,7 @@ defaults write com.apple.finder AppleShowAllFiles YES
 # Change Background to Opacity 79, Blur 0
 
 # .bash_profile
-cat > $HOME/.bash_profile <<DELIM
+cat > $HOME/.zshrc <<DELIM
 
 # Aliases
 alias ll='ls -lhA'
@@ -43,9 +43,6 @@ line_func() { grep -rnIi "$1" . --color; }
 name_func() { find . -name "*" | grep "$1" --color; }
 alias line=line_func
 alias name=name_func
-DELIM
-
-brew install the_silver_searcher
 
 # Change Terminal prompt
 parse_git_branch() {
@@ -57,5 +54,9 @@ COLOR_DIR=$'\e[38;5;197m'
 COLOR_GIT=$'\e[38;5;39m'
 setopt PROMPT_SUBST
 PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~%f ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} -> '
+
+DELIM
+
+brew install the_silver_searcher
 
 # Install VS Code and its Shell bindings
