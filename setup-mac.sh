@@ -2,17 +2,14 @@
 
 # Install XCode ?
 
-# Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# Install Homebrew
+# https://brew.sh/
 
 # Git
 git config --global alias.slog 'log -n 10 --pretty=oneline --abbrev-commit'
 
-git config --global core.autocrlf input
-git config --global credential.helper osxkeychain
-
-# Node
-brew install node
+# Install NVM
+# https://github.com/nvm-sh/nvm
 
 # Show hidden files
 defaults write com.apple.finder AppleShowAllFiles YES
