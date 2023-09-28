@@ -27,6 +27,9 @@ cat > $HOME/.zshrc <<DELIM
 alias ll='ls -lhA'
 alias sd='say done'
 
+# Arcanist
+alias ad='arc diff'
+
 # Git Aliases
 alias ga='git add'
 alias gaa='git add --all'
