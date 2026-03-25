@@ -27,9 +27,6 @@ cat > $HOME/.zshrc <<DELIM
 alias ll='ls -lhA'
 alias sd='say done'
 
-# Arcanist
-alias ad='arc diff'
-
 # Git Aliases
 alias ga='git add'
 alias gaa='git add --all'
@@ -40,6 +37,8 @@ alias gl='git pull'
 alias gp='git push'
 alias gs='git status'
 alias gd='git diff'
+alias gr='git rebase'
+alias glg='git log --oneline'
 
 # line and name searches
 line_func() { grep -rnIi "$1" . --color; }
